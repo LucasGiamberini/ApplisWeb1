@@ -1,0 +1,186 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    background-image: url('https://www.full-wallpaper.com/informatique/data-center/shutterstock_2695846.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*//////////////////////////Header////////////////////////////////////*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #1e115d;
+    border-radius: 10px;
+}
+
+#logoPanier{
+width :70px;
+height:70px;
+}
+
+
+
+
+#logo{
+    width:150px;
+    height:150px;
+}
+
+
+
+a{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    font-family:"Jazz LET", fantasy; 
+    color:#092156 ;
+}
+
+li{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column; 
+    background-color:     #1e57d2;
+    height: 150px;
+    width: 150px; 
+    text-align: center;
+
+
+}
+
+ul{
+    display: flex;
+   
+
+}
+
+#message{
+   background-color: aliceblue;
+    color:#1e115d;
+    font-family:"Jazz LET", fantasy;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////column////////////////////////////////////////////////////////////////////////*/
+column{
+    display: flex;
+    justify-content: space-around;
+}
+
+#fenetreAjouter{
+    display:flex;
+    flex-direction:column;
+    Align-Content:center;
+    text-align: center;
+    background-color: #1e57d2;
+    font-family:"Jazz LET", fantasy;
+    color:#1e115d;
+    width:80%;
+
+}
+
+#boutonAjouter{
+    border-radius: 15px;
+    height:66px;
+    width:265px;
+    background-color: #1e115d;
+    font-family:"Impact", fantasy;
+    font-size:30px;
+    color:#1e57d2;
+
+}
+
+
+
+.champTexte{
+    background-color:rgba(242, 255, 0, 0.243);
+    border-radius:10px;
+    text-align: center;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*///////////////////Recap/////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+#recap1{
+
+    display: flex;
+    justify-content: space-around; 
+}
+
+#recap2{
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    
+}
+
+h2{
+    color:#0effe7;
+    background-color: #1e57d2;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#imgProduit{
+    width:150px;
+    height:150px;
+}
+
+.tableauRecapitulatif{
+   
+    border: solid 2px black;
+ 
+    text-align: center;
+    background-color: #1e57d2;
+    font-family:"Jazz LET";
+    color:#0effe7;
+    border-radius: 15px;
+    
+   
+
+    
+  }
+
+.enteteTableau{
+   
+    height:30px;
+}
+
+
+#plusMoin{
+    display: -webkit-inline-box;
+    margin: 15px;
+    position: relative;
+    top: 64px;
+
+}
+
+.bouton{
+    border-radius: 5px;
+    background-color:#0effe7 ;
+    color: #1e57d2 ;
+    font-family:"Jazz LET",fantasy;
+    
+}
+
+.supprimer{
+    border-radius: 5px;
+    background-color: rgb(164, 21, 21);
+    font-family:"Jazz LET",fantasy;
+    color: rgb(204 217 229);
+    font-size: 15px;
+
+}
+
+#panier{
+    border-radius: 15px;
+}
