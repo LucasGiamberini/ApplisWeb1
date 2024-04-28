@@ -1,6 +1,7 @@
 *{
     text-decoration: none;
     list-style: none;
+    color:white !important ;
     
 }
 
@@ -39,7 +40,7 @@ a{
     flex-direction: column;
     align-items:center;
     font-family:"Jazz LET", fantasy; 
-    color:#092156 ;
+  
 }
 
 li{
@@ -62,8 +63,8 @@ ul{
 }
 
 #message{
-   background-color: aliceblue;
-    color:#1e115d;
+    background-color: rgb(164, 21, 21);
+    color: rgb(253 254 255) !important;
     font-family:"Jazz LET", fantasy;
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -80,7 +81,7 @@ column{
     text-align: center;
     background-color: #1e57d2;
     font-family:"Jazz LET", fantasy;
-    color:#1e115d;
+    color:white;
     width:80%;
 
 }
@@ -166,9 +167,8 @@ h2{
 
 .bouton{
     border-radius: 5px;
-    background-color:#0effe7 ;
-    color: #1e57d2 ;
-    font-family:"Jazz LET",fantasy;
+    background-color: #1e57d2;
+  
     
 }
 
