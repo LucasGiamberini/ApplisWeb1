@@ -149,8 +149,14 @@ if (isset($_POST['moinUn'])) {
         }
         if ($qttProduit == 0){//si quantité de produit est egale a zero
             unset($_SESSION['product'][$indexProduit]);
+            $indexToRemove = $_POST['productIndex'];//variable de l'index de la ligne du tableau
+            unset($_SESSION['product'][$indexToRemove]);//suprime la ligne du tableau
+            $imgToRemove=$_POST['productImg'] ;//chemin de la suppression de l'image(voir reccap.php ligne 62)
+            unlink ($imgToRemove);//supprime l'image
+        
+            
         }
-        header("Location: recap.php");
+       header("Location: recap.php");
         exit();
     
 }

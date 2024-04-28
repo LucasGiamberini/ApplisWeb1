@@ -63,7 +63,7 @@
                             "<td><figure><img id='imgProduit' src='" . $product['picture'] . "'></figure></td>",//image
                             "<td>".$product['name']."</td>",
                             "<td>".number_format($product['price'],2,",", "&nbsp;")."&nbsp;€</td>",//('2') deux chiffre après la virgule, "," affichage virgule pour separer euro et centime
-                            "<td id='plusMoin'><form method='post' action='traitement.php'><input type='hidden' name='totalQtt' value='" . $totalGeneral . "'> <input type='hidden' name='productQtt' value='" . $product['qtt'] . "'> <input type='hidden' name='productIndex' value='" . $index . "'> <input class='bouton' type='submit' name='moinUn' value= '-'></form>".$product['qtt'].
+                            "<td id='plusMoin'><form method='post' action='traitement.php'><input type='hidden' name='totalQtt' value='" . $totalGeneral . "'> <input type='hidden' name='productQtt' value='" . $product['qtt'] . "'> <input type='hidden' name='productIndex' value='" . $index . "'> <input type='hidden' name='productImg' value='" . $product['picture'] . "'><input class='bouton' type='submit' name='moinUn' value= '-'></form>".$product['qtt'].
                             "<form method='post' action='traitement.php'> <input type='hidden' name='productQtt' value='" . $product['qtt'] . "'> <input type='hidden' name='productIndex' value='" . $index . "'> <input class='bouton' type='submit' name='plusUn' value= '+'></form></td>",//quantite
                             "<td>".number_format($total, 2,",", "&nbsp")."&nbsp;€</td>",
                                 "<td >
