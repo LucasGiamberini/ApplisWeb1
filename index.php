@@ -57,7 +57,7 @@
                     <p>
                             <label>
                                 Image :<br>
-                                <input type="file" name="picture" accept="image/jpeg, image/png"> <!-- upload image + accept="image/*" pour prendre que le fichier choisis est bien une ima -->
+                                <input type="file" name="picture" accept="image/jpeg, image/png ,image/gif "> <!-- upload image + accept="image/*" pour prendre que le fichier choisis est bien une ima -->
                             </label>
                         </p>   
                     <p>

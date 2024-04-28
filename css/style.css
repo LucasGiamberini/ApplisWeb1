@@ -63,7 +63,7 @@ ul{
 }
 
 #message{
-    background-color: rgb(164, 21, 21);
+    background-color: rgb(255, 0, 0);
     color: rgb(253 254 255) !important;
     font-family:"Jazz LET", fantasy;
 }
@@ -94,10 +94,13 @@ column{
     font-family:"Impact", fantasy;
     font-size:30px;
     color:#1e57d2;
-
+    cursor: pointer;
 }
 
-
+#boutonAjouter:hover{
+    background-color: #1e115d;
+   
+}
 
 .champTexte{
     background-color:rgba(242, 255, 0, 0.243);
@@ -174,7 +177,7 @@ h2{
 
 .supprimer{
     border-radius: 5px;
-    background-color: rgb(164, 21, 21);
+    background-color: rgb(255, 0, 0);
     font-family:"Jazz LET",fantasy;
     color: rgb(204 217 229);
     font-size: 15px;
