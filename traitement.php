@@ -25,14 +25,22 @@ if($name && $price && $qtt){//verfie que chaque variable a une entré sauf image
     $target_file = $target_directory . basename($_FILES["picture"]["name"]); // Chemin complet du fichier
     $maxFileSize = 250 *  1024; // Taille maximale autorisée en octets (ici, 250 ko),*1024 pour convertir les octet en kilo octet
     $imageTailleInfo = filesize($_FILES["picture"]["tmp_name"]);//taille image
-   
+   var_dump($imageTailleInfo);
+if ($imageTailleInfo > 256000){
+    $message="la taille du fichier est supperieur a 250 ko! ";
+    header("Location:index.php?message=" . urlencode($message));
+    exit();// La fonction exit() est utilisée pour arrêter l'exécution du script après la redirection.
+}
+
+
+
 // La fonction move_uploaded_file déplace le fichier temporaire téléchargé vers l'emplacement spécifié
 //Tableau des extensions que l'on accepte
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));//stokage du type d'extension de l'image uploader
 $extensions = ['jpg', 'png', 'jpeg', 'gif'];
 ////////////////////////////////////////////////securité////////////////////////////////////////////////////////////
 ////////////////////verification de l'extension utiliser ainsi que de la taille pour eviter les erreurs ou virus///////////////
-if (in_array($imageFileType, $extensions) && $imageTailleInfo <$maxFileSize) {// verifie si l'extension de l'image est accepter et si la taille du fichier ne depasse pas 1 mo
+if (in_array($imageFileType, $extensions) && $imageTailleInfo < $maxFileSize) {// verifie si l'extension de l'image est accepter et si la taille du fichier ne depasse pas 1 mo
     $uniqueFileName = uniqid() . '.' . $imageFileType; //uniqid() Générer un nom de fichier unique
         $target_file = $target_directory . $uniqueFileName; // Chemin complet avec nom de fichier unique
     move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file);// et la sauvegarde si la condition est bonne
